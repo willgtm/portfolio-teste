@@ -1,0 +1,208 @@
+/*Importar fontes usadas na página */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{ /*Variáveis das cores */
+    --cor_primaria: rgb(0, 0, 0);
+    --cor_secundaria: #f6f6f6;
+    --cor_terciaria: #b23518;
+    --cor_hover: #272727;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    padding: 2% 0 0 25%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: var(--cor_terciaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor_primaria);
+    color: var(--cor_secundaria)
+}
+.destaque {
+    color:var(--cor_terciaria);
+}
+
+.intro {
+    padding: 5% 15%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px
+}
+
+.intro_imagem {
+    width: 50%;
+}
+    
+
+.intro_texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.intro_texto_titulo {
+    font-size: 2.25rem;
+    font-family: "Krona One", sans-serif;
+}
+
+.intro_texto_conteudo{
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.intro_links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.intro_links_contato { /* CSS DOS BOTÕES */
+    width: 65%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    padding: 21.5px 0;
+    color: var(--cor_secundaria);
+    font-weight: 600;
+    border: 2px solid var(--cor_terciaria);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+.intro_links_subtitulo {
+    font-size: 1.5rem;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+}
+
+.intro_links_contato:hover { /*Animação Botão*/
+    background-color: var(--cor_hover);
+    transform: scale(1.05); /* Aumenta o tamanho do botão*/
+}
+
+/* CSS do Formulário */
+
+/* Widths diferentes para tentar alinhar o tamanho */
+.formulario {
+    color: var(--cor_hover);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor_primaria);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.formulario form {
+    display: flex;
+    align-items:start;
+    flex-wrap: wrap;
+    padding: 32px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 42% ;
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid var(--cor_hover);
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.formulario input:first-child {
+    margin-right: 16px;
+}
+
+.formulario input[name=mail]{
+    width: 89%;
+}
+
+.formulario textarea{
+    width:87%;
+    height: 180px;
+    padding: 16px;
+}
+
+.formulario button{
+    display: block;
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--cor_terciaria);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.formulario_titulo{
+    margin-top: 5%;
+    color: var(--cor_secundaria);
+    padding: 2%;
+    font-size: 24px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 600;
+}
+
+/*CSS Rodapé */
+.rodape {
+    background-color: var(--cor_terciaria);
+    text-align: center;
+    color: var(--cor_primaria);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    flex-direction: column;
+    padding: 24px;
+    margin-top: 10%;
+}
+
+/*Página projetos */
+.portfolio_imagem{
+    border-radius: 32px;
+}
+
+/*CSS Experiencias */
+
+.timeline_conteudo{
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    padding:2%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.titulo {
+    padding: 3%;
+    font-size: 2.25rem;
+    font-family: "Krona One", sans-serif;
+    text-align: center;
+}
